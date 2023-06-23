@@ -1,1 +1,8 @@
+a {
+    color: rgb(165, 162, 162);
+}
+
+a:hover, a.active { 
+    color: white;
+}
 

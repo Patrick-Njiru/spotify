@@ -1,0 +1,6 @@
+export { default as Home } from './Home'
+export { default as Category } from './Category'
+export { default as SideBar } from './global/SideBar'
+export { default as Footer } from './global/Footer'
+export { default as Search } from './Search'
+export { default as Library } from './Library'
