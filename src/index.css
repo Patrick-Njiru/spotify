@@ -9,8 +9,8 @@
 	box-sizing: border-box;
 }
 
-#sidebar {
-	width: 330px;
+a.active {
+	color: white;
 }
 
 /* For any elements with overflowing content */
@@ -27,4 +27,18 @@
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: #888;
+}
+
+/* CTA */
+#cta {
+	background: rgb(237, 38, 217);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(rgba(237, 38, 217, 1)),
+		to(rgba(103, 163, 221, 1))
+	);
+	background: -o-linear-gradient(left, rgba(237, 38, 217, 1) 0%, rgba(103, 163, 221, 1) 100%);
+	background: linear-gradient(90deg, rgba(237, 38, 217, 1) 0%, rgba(103, 163, 221, 1) 100%);
 }

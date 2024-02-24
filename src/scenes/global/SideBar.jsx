@@ -5,9 +5,9 @@ import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
 const SideBar = () => {
 	return (
-		<aside id='sidebar' className='p-2'>
+		<aside id='sidebar' className='w-72 lg:w-96'>
 			{/* Home and Search Links*/}
-			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
+			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5  '>
 				<NavLink
 					href='/'
 					className='font-medium flex items-center space-x-1 w-fit pe-5'
@@ -55,7 +55,7 @@ const SideBar = () => {
 
 				{/* Overflowing Content */}
 				<div className='overflow-hidden hover:overflow-auto'>
-					<div className='space-y-6 h-16'>
+					<div className='space-y-6 h-16 lg:h-20 '>
 						<div className='mt-2 p-3 mx-2 space-y-3 bg-neutral-800 rounded-xl text-white'>
 							<p className='font-bold'>Create your first playlist</p>
 							<p className='text-xs font-medium'>
