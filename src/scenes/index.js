@@ -1,6 +1,8 @@
-export { default as Home } from './Home'
-export { default as Category } from './Category'
-export { default as SideBar } from './global/SideBar'
-export { default as Footer } from './global/Footer'
-export { default as Search } from './Search'
-export { default as Library } from './Library'
+import Home from "./Home"
+import Category from "./Category"
+import SideBar from "./global/SideBar"
+import Footer from "./global/Footer"
+import Search from "./Search"
+import Library from "./Library"
+
+export { Home, Category, SideBar, Footer, Search, Library }

@@ -1,3 +1,5 @@
-export { default as Button } from './Button'
-export { default as Song } from './Song'
-export { default as Header } from './Header'
+import Button from "./Button"
+import Song from "./Song"
+import Header from "./Header"
+
+export { Button, Song, Header }
