@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { Button, Header } from '../components'
+import { Header } from '../components'
 
 const Home = () => {
   return (
