@@ -4,9 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--width-min: 850px;
+}
+
 * {
 	font-family: "Roboto", sans-serif;
 	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	padding: 8px;
+}
+
+#app {
+	min-width: var(--width-min);
+}
+
+#app-main {
+	max-height: 83.3vh;
 }
 
 a.active {
@@ -41,4 +58,5 @@ a.active {
 	);
 	background: -o-linear-gradient(left, rgba(237, 38, 217, 1) 0%, rgba(103, 163, 221, 1) 100%);
 	background: linear-gradient(90deg, rgba(237, 38, 217, 1) 0%, rgba(103, 163, 221, 1) 100%);
+	min-width: var(--width-min);
 }

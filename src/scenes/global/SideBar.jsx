@@ -5,9 +5,9 @@ import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
 const SideBar = () => {
 	return (
-		<aside id='sidebar' className='w-72 lg:w-96'>
+		<aside id='sidebar' className='w-4/12'>
 			{/* Home and Search Links*/}
-			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5  '>
+			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
 				<NavLink
 					href='/'
 					className='font-medium flex items-center space-x-1 w-fit pe-5'
@@ -34,7 +34,7 @@ const SideBar = () => {
 			</section>
 
 			{/* library, create playlist and browse podcasts. */}
-			<section className='mt-2 pe-2 bg-neutral-900 rounded'>
+			<section className='mt-2 pe-2 bg-neutral-900 rounded-lg'>
 				<div className='p-4 flex justify-between items-center'>
 					<NavLink
 						to='library'
@@ -81,21 +81,21 @@ const SideBar = () => {
 
 				<div className='flex-col text-gray-400 p-5 pt-10'>
 					<div className='h-20 flex flex-wrap text-xs'>
-						<a href='#unknown'>Legal</a>
-						<a href='#unknown' className='mx-3'>
+						<a href='#unknown' className="me-3">Legal</a>
+						<a href='#unknown' className="me-3">
 							Safety & Privacy Center
 						</a>
-						<a href='#unknown'>Privacy Policy</a>
-						<a href='#unknown'>Cookies Settings</a>
-						<a href='#unknown' className='mx-3'>
+						<a href='#unknown' className="me-3">Privacy Policy</a>
+						<a href='#unknown' className="me-3">Cookies Settings</a>
+						<a href='#unknown' className='me-3'>
 							About Ads
 						</a>
-						<a href='#unknown'>Accessibility</a>
+						<a href='#unknown' className="me-3">Accessibility</a>
 						<a href='#unknown'>Cookies</a>
 					</div>
 					<button
 						type='button'
-						className='text-white p-2 px-3 border border-gray-500 font-extrabold text-xs rounded-full flex space-x-1 my-3 group hover:border-white'
+						className='text-white p-2 px-3 border border-gray-500 font-extrabold text-xs rounded-full flex space-x-1 mt-3 group hover:border-white'
 					>
 						<FaGlobe className='text-base group-hover:text-lg' />
 						<span>English</span>
