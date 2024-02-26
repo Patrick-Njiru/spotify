@@ -5,7 +5,7 @@ import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
 const SideBar = () => {
 	return (
-		<aside id='sidebar' className='w-1/3'>
+		<aside id='sidebar' className='w-1/3 flex flex-col justify-between'>
 			{/* Home and Search Links*/}
 			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
 				<NavLink

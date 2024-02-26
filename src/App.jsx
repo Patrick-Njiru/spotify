@@ -16,7 +16,7 @@ const App = () => (
 	<Router>
 		<div id='app' className='relative text-white flex space-x-3 h-full'>
 			<SideBar />
-			<main id='app-main' className='bg-neutral-900 rounded-lg relative overflow-hidden w-2/3 hover:overflow-y-auto'>
+			<main id='app-main' className='bg-neutral-900 rounded-lg relative overflow-hidden w-2/3 mb-2 hover:overflow-y-auto'>
 				<Header />
 				<Routes>
 					<Route exact path='/' element={<Home />} />

@@ -22,8 +22,8 @@ body {
 	min-width: var(--width-min);
 }
 
-#app-main {
-	height: 82vh;
+#app-main, #sidebar {
+	height: 83vh;
 }
 
 a.active {
