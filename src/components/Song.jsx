@@ -3,7 +3,7 @@ import { BiPlay } from "react-icons/bi"
 
 const Song = ({ title, description, image }) => {
 	return (
-		<div className='group p-3 relative rounded-lg w-48 shadow-md bg-neutral-800 cursor-pointer bg-gradient-to-b from-neutral-900 hover:to-0% hover:bg-neutral-700'>
+		<div className='group p-3 mb-8 relative rounded-lg w-48 shadow-md bg-neutral-800 cursor-pointer bg-gradient-to-b from-neutral-900 hover:to-0% hover:bg-neutral-700'>
 			<div className='transition-all invisible duration-200 absolute end-5 top-32 group-hover:top-28 group-hover:visible'>
 				<BiPlay className='text-5xl p-1 ps-2 bg-green-500 rounded-full fill-black hover:ps-1 hover:pe-0' />
 			</div>

@@ -23,7 +23,7 @@ body {
 }
 
 #app-main {
-	max-height: 83.3vh;
+	height: 82vh;
 }
 
 a.active {

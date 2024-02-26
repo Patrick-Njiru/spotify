@@ -5,7 +5,7 @@ import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
 const SideBar = () => {
 	return (
-		<aside id='sidebar' className='w-1/4 lg:w-1/3'>
+		<aside id='sidebar' className='w-1/3'>
 			{/* Home and Search Links*/}
 			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
 				<NavLink
@@ -29,7 +29,7 @@ const SideBar = () => {
 					className='group relative transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
 				>
 					<BiSearch className='text-3xl' />
-					<span className="invisible p-1 bg-white absolute rounded-full -left-3 top-2 group-hover:visible"></span>
+					<span className="invisible p-1 bg-white absolute rounded-full -left-3 top-2"></span>
 					<span>Search</span>
 				</NavLink>
 			</section>
@@ -56,13 +56,13 @@ const SideBar = () => {
 
 				{/* Overflowing Content */}
 				<div className='overflow-hidden hover:overflow-auto'>
-					<div className='space-y-6 h-16 lg:h-20 '>
+					<div className='space-y-6 h-20'>
 						<div className='mt-2 p-3 mx-2 space-y-3 bg-neutral-800 rounded-xl text-white'>
 							<p className='font-bold'>Create your first playlist</p>
 							<p className='text-xs font-medium'>
 								It&apos;s easy, we&apos;ll help you
 							</p>
-							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-bold text-xs hover:text-sm'>
+							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
 								Create playlist
 							</button>
 						</div>
@@ -73,7 +73,7 @@ const SideBar = () => {
 								We&apos;ll keep you updated on new episodes
 							</p>
 
-							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-bold text-xs hover:text-sm'>
+							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
 								Browse podcasts
 							</button>
 						</div>
@@ -81,7 +81,7 @@ const SideBar = () => {
 				</div>
 
 				<div className='flex-col text-gray-400 p-5 pt-10'>
-					<div className='min-h-20 flex flex-wrap text-xs'>
+					<div className='min-h-24 flex flex-wrap text-xs'>
 						<a href='#unknown' className="me-3">Legal</a>
 						<a href='#unknown' className="me-3">
 							Safety & Privacy Center
@@ -96,7 +96,7 @@ const SideBar = () => {
 					</div>
 					<button
 						type='button'
-						className='text-white p-2 px-3 border border-gray-500 font-extrabold text-xs rounded-full flex space-x-1 mt-3 group hover:border-white'
+						className='text-white p-2 px-3 border border-gray-500 font-extrabold text-xs rounded-full flex space-x-1 my-2 group hover:border-white'
 					>
 						<FaGlobe className='text-base group-hover:text-lg' />
 						<span>English</span>
