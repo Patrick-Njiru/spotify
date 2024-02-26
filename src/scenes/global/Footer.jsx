@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
 	return (
-		<footer className='flex flex-wrap justify-between px-6 mt-6'>
+		<footer className='flex flex-wrap justify-between px-6 mt-20'>
 			<div className='flex flex-wrap justify-between w-full space-y-12 lg:space-y-0 lg:w-3/4'>
 				<div className='flex flex-col space-y-2 w-full lg:w-1/4'>
           <h4 className="font-bold">Company</h4>
@@ -53,7 +53,7 @@ const Footer = () => {
 				<FaTwitter className='text-4xl p-2 bg-neutral-800 rounded-full hover:bg-neutral-500' />
 				<FaFacebook className='text-4xl p-2 bg-neutral-800 rounded-full hover:bg-neutral-500' />
 			</div>
-			<div className="w-full mt-12 space-y-12">
+			<div className="w-full mt-12 space-y-12 mb-20">
 				<div className="h-1 bg-neutral-800"></div>
 				<p className="text-gray-400">&copy; 2024 Spotify AB </p>
 			</div>

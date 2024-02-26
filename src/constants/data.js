@@ -63,6 +63,6 @@ const playlistData = [
 	},
 ]
 
-const homeData = playlistData.filter(item => item.id < 5)
+const homeData = playlistData.filter((item) => item.id < 5)
 
-export {homeData, playlistData}
+export { homeData, playlistData }

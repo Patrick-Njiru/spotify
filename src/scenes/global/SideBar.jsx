@@ -5,7 +5,7 @@ import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
 const SideBar = () => {
 	return (
-		<aside id='sidebar' className='w-4/12'>
+		<aside id='sidebar' className='w-1/4 lg:w-1/3'>
 			{/* Home and Search Links*/}
 			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
 				<NavLink
@@ -26,9 +26,10 @@ const SideBar = () => {
 
 				<NavLink
 					to='/search'
-					className='transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
+					className='group relative transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
 				>
 					<BiSearch className='text-3xl' />
+					<span className="invisible p-1 bg-white absolute rounded-full -left-3 top-2 group-hover:visible"></span>
 					<span>Search</span>
 				</NavLink>
 			</section>
@@ -80,7 +81,7 @@ const SideBar = () => {
 				</div>
 
 				<div className='flex-col text-gray-400 p-5 pt-10'>
-					<div className='h-20 flex flex-wrap text-xs'>
+					<div className='min-h-20 flex flex-wrap text-xs'>
 						<a href='#unknown' className="me-3">Legal</a>
 						<a href='#unknown' className="me-3">
 							Safety & Privacy Center
