@@ -20,37 +20,44 @@ import {
 
 export const focusMusic = [
 		{
+			id: 1,
 			musicTitle: "Peaceful Piano",
 			description: "Peaceful piano to help you slow down, breathe, and relax.",
 			cover: piano,
 		},
 		{
+			id: 2,
 			musicTitle: "Deep Focus",
 			description: "Keep calm and focus with ambient and post-rock music.",
 			cover: deepFocus,
 		},
 		{
+			id: 3,
 			musicTitle: "Instrumental Study",
 			description: "Focus with soft study music in the background.",
 			cover: study,
 		},
 		{
+			id: 4,
 			musicTitle: "Focus Flow",
 			description: "Uptempo instrumental hip hop beats.",
 			cover: focusFlow,
 		},
 		{
+			id: 5,
 			musicTitle: "Reading Adventure",
 			description:
 				"Scores and soundtracks for daring quests, epic journeys, and grand adventures",
 			cover: reading,
 		},
 		{
+			id: 6,
 			musicTitle: "Beats to think to",
 			description: "Focus with deep techno and tech house.",
 			cover: think,
 		},
 		{
+			id: 7,
 			musicTitle: "Quiet Moment",
 			description: "Gentle classical music to help you relax and reflect",
 			cover: quiet,
@@ -58,41 +65,49 @@ export const focusMusic = [
 	],
 	playlists = [
 		{
+			id: 1,
 			playList: "Today's Top Hits",
 			description: "Doja Cat on top of the hottest 50!",
 			cover: topHits,
 		},
 		{
+			id: 2,
 			playList: "RapCaviar",
 			description: "New music from Gunaa, Gucci Mane and Doja Cat.",
 			cover: rapcaviar,
 		},
 		{
+			id: 3,
 			playList: "All Out 2010s",
 			description: "The biggest songs of the 2010s",
 			cover: twenty10s,
 		},
 		{
+			id: 4,
 			playList: "Rock Classics",
 			description: "Rock legends and epic songs that continue to inspire generations.",
 			cover: rock,
 		},
 		{
+			id: 5,
 			playList: "Chill Hits",
 			description: "Kick back to the best new and recent chill hits.",
 			cover: chill,
 		},
 		{
+			id: 6,
 			playList: "Viva Latino",
 			description: "Today's top Latin hits, elevando nuestra musica. Cover: Don",
 			cover: latino,
 		},
 		{
+			id: 7,
 			playList: "Mega Hit Mix",
 			description: "A mega mix of 75 favorites from the last few years",
 			cover: mix,
 		},
 		{
+			id: 8,
 			playList: "All Out 80s",
 			description: "The biggest songs in the 1980s",
 			cover: eighties,
@@ -100,11 +115,13 @@ export const focusMusic = [
 	],
 	sleepMusic = [
 		{
+			id: 1,
 			instrumental: "Sleep",
 			description: "Gentle Ambient piano to help you fall asleep.",
 			cover: sleep,
 		},
 		{
+			id: 2,
 			instrumental: "DayDreamer",
 			description: "Drift away enthralling instrumntals",
 			cover: daydreamer,

@@ -7,7 +7,7 @@ const App = () => (
 	<Router>
 		<div id='app' className='text-white flex space-x-3 h-full'>
 			<SideBar />
-			<main id='app-main' className='bg-neutral-900 w-8/12 rounded-lg relative'>
+			<main id='app-main' className='bg-neutral-900 w-8/12 rounded-lg relative overflow-auto'>
 				<Header />
 				<Routes>
 					<Route exact path='/' element={<Home />} />
