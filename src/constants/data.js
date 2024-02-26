@@ -1,129 +1,68 @@
-import {
-	twenty10s,
-	chill,
-	daydreamer,
-	deepFocus,
-	focusFlow,
-	latino,
-	mix,
-	piano,
-	quiet,
-	rapcaviar,
-	reading,
-	rock,
-	sleep,
-	study,
-	think,
-	topHits,
-	eighties,
-} from "./images"
+import { playlistImgs } from "./images"
 
-export const focusMusic = [
-		{
-			id: 1,
-			musicTitle: "Peaceful Piano",
-			description: "Peaceful piano to help you slow down, breathe, and relax.",
-			cover: piano,
-		},
-		{
-			id: 2,
-			musicTitle: "Deep Focus",
-			description: "Keep calm and focus with ambient and post-rock music.",
-			cover: deepFocus,
-		},
-		{
-			id: 3,
-			musicTitle: "Instrumental Study",
-			description: "Focus with soft study music in the background.",
-			cover: study,
-		},
-		{
-			id: 4,
-			musicTitle: "Focus Flow",
-			description: "Uptempo instrumental hip hop beats.",
-			cover: focusFlow,
-		},
-		{
-			id: 5,
-			musicTitle: "Reading Adventure",
-			description:
-				"Scores and soundtracks for daring quests, epic journeys, and grand adventures",
-			cover: reading,
-		},
-		{
-			id: 6,
-			musicTitle: "Beats to think to",
-			description: "Focus with deep techno and tech house.",
-			cover: think,
-		},
-		{
-			id: 7,
-			musicTitle: "Quiet Moment",
-			description: "Gentle classical music to help you relax and reflect",
-			cover: quiet,
-		},
-	],
-	playlists = [
-		{
-			id: 1,
-			playList: "Today's Top Hits",
-			description: "Doja Cat on top of the hottest 50!",
-			cover: topHits,
-		},
-		{
-			id: 2,
-			playList: "RapCaviar",
-			description: "New music from Gunaa, Gucci Mane and Doja Cat.",
-			cover: rapcaviar,
-		},
-		{
-			id: 3,
-			playList: "All Out 2010s",
-			description: "The biggest songs of the 2010s",
-			cover: twenty10s,
-		},
-		{
-			id: 4,
-			playList: "Rock Classics",
-			description: "Rock legends and epic songs that continue to inspire generations.",
-			cover: rock,
-		},
-		{
-			id: 5,
-			playList: "Chill Hits",
-			description: "Kick back to the best new and recent chill hits.",
-			cover: chill,
-		},
-		{
-			id: 6,
-			playList: "Viva Latino",
-			description: "Today's top Latin hits, elevando nuestra musica. Cover: Don",
-			cover: latino,
-		},
-		{
-			id: 7,
-			playList: "Mega Hit Mix",
-			description: "A mega mix of 75 favorites from the last few years",
-			cover: mix,
-		},
-		{
-			id: 8,
-			playList: "All Out 80s",
-			description: "The biggest songs in the 1980s",
-			cover: eighties,
-		},
-	],
-	sleepMusic = [
-		{
-			id: 1,
-			instrumental: "Sleep",
-			description: "Gentle Ambient piano to help you fall asleep.",
-			cover: sleep,
-		},
-		{
-			id: 2,
-			instrumental: "DayDreamer",
-			description: "Drift away enthralling instrumntals",
-			cover: daydreamer,
-		},
-	]
+const playlistData = [
+	{
+		id: 1,
+		title: "wake up gently",
+		description: "Wake up at your own pace with gentle piano music.",
+		image: playlistImgs[0],
+	},
+	{
+		id: 2,
+		title: "jazzy morning",
+		description: "Start your day right and wake up with some calm...",
+		image: playlistImgs[1],
+	},
+	{
+		id: 3,
+		title: "today's top hits",
+		description: "Beyonce is on top of the Hottest 50!",
+		image: playlistImgs[2],
+	},
+	{
+		id: 4,
+		title: "cozy accoustic morning",
+		description: "Warm insturmental guitar to a gentle start.",
+		image: playlistImgs[3],
+	},
+	{
+		id: 5,
+		title: "RapCaviar",
+		description: "New music from 21 Savage, ye and Yeat.",
+		image: playlistImgs[4],
+	},
+	{
+		id: 6,
+		title: "All out of 90s",
+		description: "The biggest songs of the 1990s. Cover: Sheryl...",
+		image: playlistImgs[5],
+	},
+	{
+		id: 7,
+		title: "Mellow Lofi Morning",
+		description: "Laid-back beats for an easygoing morning",
+		image: playlistImgs[6],
+	},
+	{
+		id: 8,
+		title: "Soft Rock",
+		description: "It's like rock, but softer. Cover: Billy Joel",
+		image: playlistImgs[7],
+	},
+	{
+		id: 9,
+		title: "Chill Hits",
+		description: "Kick back to the best new and recent chill hits.",
+		image: playlistImgs[8],
+	},
+	{
+		id: 10,
+		title: "Mega Hit Mix",
+		description: "A mega mix of 75 favorites from the last few years!",
+		image: playlistImgs[9],
+	},
+]
+
+const homeData = playlistData.filter(item => item.id < 5)
+
+export {homeData, playlistData}

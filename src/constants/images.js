@@ -1,37 +1,24 @@
-import twenty10s from "../assets/all out of 2010s.png"
-import chill from "../assets/chill.png"
-import daydreamer from "../assets/daydreamer.png"
-import deepFocus from "../assets/deep-focus.png"
-import focusFlow from "../assets/focus-flow.png"
-import latino from "../assets/latino.png"
-import mix from "../assets/mix.png"
-import piano from "../assets/piano.png"
-import quiet from "../assets/quiet.png"
-import rapcaviar from "../assets/rapcaviar.png"
-import reading from "../assets/reading.png"
-import rock from "../assets/rock.png"
-import sleep from "../assets/sleep.png"
-import study from "../assets/study.png"
-import think from "../assets/think.png"
-import topHits from "../assets/top-hits.png"
-import eighties from "../assets/80s.png"
+import allOutOfThe90s from "../assets/spotify-playlists/all-out-of-90s.jpg"
+import chillHits from "../assets/spotify-playlists/chill-hits.jpg"
+import cozyAcousticMorning from "../assets/spotify-playlists/cozy-acoustic-morning.jpg"
+import jazzyMorning from "../assets/spotify-playlists/jazzy-morning.jpg"
+import megaHitMix from "../assets/spotify-playlists/mega-hit-mix.jpg"
+import mellowLofiMorning from "../assets/spotify-playlists/mellow-lofi-morning.jpg"
+import rapCaviar from "../assets/spotify-playlists/rapcaviar.jpg"
+import softRock from "../assets/spotify-playlists/soft-rock.jpg"
+import todaysTopHits from "../assets/spotify-playlists/todays-top-hits.jpg"
+import wakeUpGently from "../assets/spotify-playlists/wake-up-gently.jpg"
+// playlist
 
-export default {
-	twenty10s,
-	chill,
-	daydreamer,
-	deepFocus,
-	focusFlow,
-	latino,
-	mix,
-	piano,
-	quiet,
-	rapcaviar,
-	reading,
-	rock,
-	sleep,
-	study,
-	think,
-	topHits,
-	eighties,
-}
+export const playlistImgs = [
+	wakeUpGently,
+	jazzyMorning,
+	todaysTopHits,
+	cozyAcousticMorning,
+	rapCaviar,
+	allOutOfThe90s,
+	mellowLofiMorning,
+	softRock,
+	chillHits,
+	megaHitMix,
+]
