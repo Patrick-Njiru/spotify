@@ -8,7 +8,6 @@ import {
 	SideBar,
 	CTA,
 	Podcasts,
-	SleepMusic,
 } from "./scenes"
 import { Header } from "./components"
 
@@ -24,7 +23,6 @@ const App = () => (
 					<Route path='/search' element={<Search />} />
 					<Route path='/library' element={<Library />} />
 					<Route path='/podcasts' element={<Podcasts />} />
-					<Route path='/sleep-music' element={<SleepMusic />} />
 				</Routes>
 				<Footer />
 			</main>
