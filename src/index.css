@@ -30,6 +30,10 @@ a.active {
 	color: white;
 }
 
+a#btn-header, a#btn-cta {
+	color: #000; 
+}
+
 /* For any elements with overflowing content */
 ::-webkit-scrollbar {
 	display: inline;

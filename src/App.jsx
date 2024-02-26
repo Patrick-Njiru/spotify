@@ -9,6 +9,8 @@ import {
 	CTA,
 	Podcasts,
 	Playlists,
+	LogIn,
+	SignUp,
 } from "./scenes"
 import { Header } from "./components"
 
@@ -25,10 +27,18 @@ const App = () => (
 					<Route path='/library' element={<Library />} />
 					<Route path='/playlists' element={<Playlists />} />
 					<Route path='/podcasts' element={<Podcasts />} />
+					<Route path='/signup' element={<SignUp />} />
+					<Route path='/login' element={<LogIn />} />
 				</Routes>
 				<Footer />
 			</main>
 			<CTA />
+			{/* <div className="w-screen">
+				<Routes>
+				<Route path='/signup' element={<SignUp />} />
+					<Route path='/login' element={<LogIn />} />
+				</Routes>
+			</div> */}
 		</div>
 	</Router>
 )

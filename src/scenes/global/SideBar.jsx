@@ -96,9 +96,9 @@ const SideBar = () => {
 					</div>
 					<button
 						type='button'
-						className='text-white p-2 px-3 border border-gray-500 font-extrabold text-xs rounded-full flex space-x-1 my-2 group hover:border-white'
+						className='text-white p-2 px-3 border border-gray-500 font-semibold text-xs rounded-full flex space-x-1 my-2 group hover:border-white hover:font-extrabold'
 					>
-						<FaGlobe className='text-base group-hover:text-lg' />
+						<FaGlobe className='text-base' />
 						<span>English</span>
 					</button>
 				</div>

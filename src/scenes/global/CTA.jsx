@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const CallToAction = () => {
 	return (
 		<section
@@ -11,9 +13,9 @@ const CallToAction = () => {
 					needed.
 				</p>
 			</div>
-			<button className='bg-white text-black px-6 py-3 pt-4 font-semibold rounded-full min-w-40 hover:bg-slate-50 hover:font-extrabold hover:shadow-lg'>
+			<NavLink to='/signup' id="btn-cta" className='bg-white text-black px-6 py-3 pt-4 font-semibold rounded-full min-w-40 hover:bg-slate-50 hover:font-extrabold hover:shadow-lg'>
 				Sign up for free
-			</button>
+			</NavLink>
 		</section>
 	)
 }
