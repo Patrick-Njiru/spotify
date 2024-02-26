@@ -1,10 +1,11 @@
-import { FaApple, FaFacebook, FaGoogle, FaSpotify } from "react-icons/fa"
+import { FaApple, FaFacebook, FaSpotify } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
+import { googleIcon } from "../constants/images"
 
 const SignUp = () => {
 	return (
-		<div className='min-w-full h-auto fixed bg-zinc-900 z-10 top-0 bottom-0 start-0 overflow-y-auto'>
-			<div className='font-bold m-5'>
+		<div className='w-full h-auto fixed bg-zinc-900 z-10 top-0 bottom-0 start-0 overflow-y-auto'>
+			<div className='font-bold m-6 mb-0'>
 				<FaSpotify className='text-2xl inline' /> Spotify
 			</div>
 			<div className='w-72 mx-auto space-y-6 my-3'>
@@ -29,14 +30,14 @@ const SignUp = () => {
 					</button>
 				</div>
 				<div className='flex items-center justify-between'>
-					<span className='w-2/5 h-1 bg-gray-500'></span>
+					<span className='w-2/5 h-0.5 bg-gray-700'></span>
 					<span className='w-1/5 text-center'>or</span>
-					<span className='w-2/5 h-1 bg-gray-500'></span>
+					<span className='w-2/5 h-0.5 bg-gray-700'></span>
 				</div>
 				{/* Alternative signup options */}
 				<div className=' space-y-2'>
 					<button className='relative font-bold text-center text-sm rounded-full py-2 w-full border border-gray-500 hover:border-white'>
-						<FaGoogle className='absolute start-5 top-1/4 text-lg fill-red-500' />
+						<img src={googleIcon} alt='' className='h-4 absolute start-5 top-1/4 ' />
 						Sign up with Google
 					</button>
 					<button className='relative font-bold text-center text-sm rounded-full py-2 w-full border border-gray-500 hover:border-white'>
@@ -44,11 +45,11 @@ const SignUp = () => {
 						Sign up with facebook
 					</button>
 					<button className='relative font-bold text-center text-sm rounded-full py-2 w-full border border-gray-500 hover:border-white'>
-						<FaApple className='absolute start-5 top-1/4 text-lg' />
+						<FaApple className='absolute start-5 top-1/5 text-xl fill-white' />
 						Sign up with Apple
 					</button>
 				</div>
-				<p className='h-1 bg-gray-500'></p>
+				<p className='h-0.5 bg-gray-700'></p>
 				<div className='flex justify-center space-x-2 text-xs'>
 					<p className='text-gray-400 font-medium'>Already have an account?</p>
 					<NavLink to='/login' className='underline font-medium'>
@@ -60,8 +61,12 @@ const SignUp = () => {
 					<span className='block'>
 						This site is protected by reCAPTCHA and the Google
 					</span>
-					<span className='underline mx-1'>Privacy Policy</span> and
-					<span className='underline mx-1'>Terms of Service</span> apply
+					<a className='underline mx-1 cursor-pointer hover:underline'>Privacy Policy</a>{" "}
+					and
+					<a className='underline mx-1 cursor-pointer hover:underline'>
+						Terms of Service
+					</a>{" "}
+					apply
 				</p>
 			</div>
 		</div>

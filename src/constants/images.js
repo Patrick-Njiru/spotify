@@ -9,8 +9,9 @@ import softRock from "../assets/spotify-playlists/soft-rock.jpg"
 import todaysTopHits from "../assets/spotify-playlists/todays-top-hits.jpg"
 import wakeUpGently from "../assets/spotify-playlists/wake-up-gently.jpg"
 // playlist
+import googleIcon from "../assets/google-color-icon.svg"
 
-export const playlistImgs = [
+const playlistImgs = [
 	wakeUpGently,
 	jazzyMorning,
 	todaysTopHits,
@@ -22,3 +23,5 @@ export const playlistImgs = [
 	chillHits,
 	megaHitMix,
 ]
+
+export { googleIcon, playlistImgs }
