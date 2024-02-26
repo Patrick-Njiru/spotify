@@ -6,9 +6,9 @@ const LogIn = () => {
 	return (
 		<div className='min-w-full h-auto fixed bg-zinc-950 from-zinc-800 to-zinc-950 z-10 top-0 bottom-0 start-0 overflow-y-auto md:bg-gradient-to-b'>
 			{/* logo */}
-			<div className='flex items-center font-bold p-10 py-8 bg-zinc-950 mb-0 md:text-2xl'>
+			<NavLink to='/' className='flex items-center font-bold p-10 py-8 bg-zinc-950 mb-0 md:text-2xl'>
 				<FaSpotify className='inline me-2 text-2xl md:text-4xl' /> Spotify
-			</div>
+			</NavLink>
 
 			<div className='w-full rounded-xl text-center space-y-10 mx-auto bg-zinc-950 from-zinc-950 to-zinc-800 px-7 pt-8 md:w-7/12 md:bg-gradient-to-b md:my-8 md:pt-24 md:pb-16 md:px-40'>
 				<h1 className='text-3xl font-extrabold text-start md:text-center md:mb-16 md:text-5xl'>

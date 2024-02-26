@@ -4,10 +4,10 @@ import { googleIcon } from "../constants/images"
 
 const SignUp = () => {
 	return (
-		<div className='w-full h-auto fixed bg-zinc-900 z-10 top-0 bottom-0 start-0 overflow-y-auto'>
-			<div className='font-bold m-6 mb-0'>
+		<div className='w-full h-auto fixed bg-zinc-950 z-10 top-0 bottom-0 start-0 overflow-y-auto'>
+			<NavLink to='/' className='block font-bold m-6 mb-0'>
 				<FaSpotify className='text-2xl inline' /> Spotify
-			</div>
+			</NavLink>
 			<div className='w-72 mx-auto space-y-6 my-3'>
 				<h1 className='text-4xl font-bold'>Sign up to start listening</h1>
 				<div className='space-y-3'>
