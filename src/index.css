@@ -6,11 +6,13 @@
 
 :root {
 	--width-min: 850px;
+	color-scheme: dark;
 }
 
 * {
 	font-family: "Roboto", sans-serif;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +27,15 @@ body {
 #app-main,
 #sidebar {
 	height: 83vh;
+}
+
+#app-main {
+	width: 70vw;
+	min-width: 575px;
+}
+#sidebar {
+	width: 30vw;
+	min-width: 265px;
 }
 
 a.active {

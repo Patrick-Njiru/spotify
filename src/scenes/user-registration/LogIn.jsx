@@ -63,7 +63,7 @@ const LogIn = () => {
 						/>
 						<FaEyeSlash className='text-xl absolute end-4 bottom-3 fill-gray-400 hover:fill-white' />
 					</div>
-					<div className=''>
+					<div>
 						<div className='space-x-4 text-start'>
 							<input type='checkbox' name='remember' id='remember' />
 							<label htmlFor='remember' className='text-sm'>
@@ -75,6 +75,10 @@ const LogIn = () => {
 					{/* submit btn */}
 					<button
 						type='submit'
+						onClick={(e) => {
+							e.preventDefault()
+							console.log("log in")
+						}}
 						className='w-full py-2 text-black text-center rounded-full bg-green-500 font-bold hover:bg-green-400 hover:font-extrabold'
 					>
 						Log In

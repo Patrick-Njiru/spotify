@@ -10,7 +10,7 @@ const SignUp = () => {
 			</NavLink>
 			<div className='w-72 mx-auto space-y-6 my-3'>
 				<h1 className='text-4xl font-bold'>Sign up to start listening</h1>
-				<div className='space-y-3'>
+				<form className='space-y-3' onSubmit={e => e.preventDefault()}>
 					<label htmlFor='email' className='text-xs font-medium'>
 						Email address
 					</label>
@@ -25,10 +25,10 @@ const SignUp = () => {
 						use phone number instead.
 					</button>
 					{/* submit btn */}
-					<button className='w-full py-2 text-black text-center text-sm rounded-full bg-green-500 font-medium hover:bg-green-400'>
+					<button type="submit" className='w-full py-2 text-black text-center text-sm rounded-full bg-green-500 font-medium hover:bg-green-400'>
 						Next
 					</button>
-				</div>
+				</form>
 				<div className='flex items-center justify-between'>
 					<span className='w-2/5 h-0.5 bg-gray-700'></span>
 					<span className='w-1/5 text-center'>or</span>

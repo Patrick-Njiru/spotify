@@ -20,7 +20,7 @@ const App = () => {
 				<SideBar />
 				<main
 					id='app-main'
-					className='bg-neutral-900 rounded-lg relative overflow-hidden w-2/3 mb-2 hover:overflow-y-auto'
+					className='bg-neutral-900 rounded-lg relative overflow-hidden mb-2 hover:overflow-y-auto'
 				>
 					<Header />
 					<Routes>

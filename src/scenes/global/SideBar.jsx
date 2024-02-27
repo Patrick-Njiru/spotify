@@ -13,11 +13,11 @@ const SideBar = () => {
 	}, [pathname])
 
 	return (
-		<aside id='sidebar' className='w-1/3 flex flex-col justify-between'>
+		<aside id='sidebar' className='flex flex-col justify-between'>
 			{/* Home and Search Links*/}
 			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
 				<NavLink
-					href='/'
+					to='/'
 					className='font-medium flex items-center space-x-1 w-fit pe-5'
 					title='Spotify'
 				>
@@ -48,7 +48,7 @@ const SideBar = () => {
 			<section className='mt-2 pe-2 bg-neutral-900 rounded-lg'>
 				<div className='p-4 flex justify-between items-center'>
 					<NavLink
-						to='library'
+						// to='library'
 						className='transition-all duration-300 font-bold text-gray-400 flex hover:text-white'
 						title='Collapse Your Library'
 					>
