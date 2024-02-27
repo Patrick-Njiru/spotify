@@ -22,7 +22,8 @@ body {
 	min-width: var(--width-min);
 }
 
-#app-main, #sidebar {
+#app-main,
+#sidebar {
 	height: 83vh;
 }
 
@@ -30,8 +31,10 @@ a.active {
 	color: white;
 }
 
-a#btn-header, a#btn-cta, a#btn-podcasts {
-	color: #000; 
+a#btn-header,
+a#btn-cta,
+a#btn-podcasts {
+	color: #000;
 }
 
 /* For any elements with overflowing content */

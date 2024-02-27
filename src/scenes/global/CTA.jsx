@@ -13,7 +13,11 @@ const CallToAction = () => {
 					needed.
 				</p>
 			</div>
-			<NavLink to='/signup' id="btn-cta" className='bg-white text-black px-6 py-3 pt-4 font-semibold rounded-full min-w-40 hover:bg-slate-50 hover:font-extrabold hover:shadow-lg'>
+			<NavLink
+				to='/signup'
+				id='btn-cta'
+				className='bg-white text-black px-6 py-3 pt-4 font-semibold rounded-full min-w-40 hover:bg-slate-50 hover:font-extrabold hover:shadow-lg'
+			>
 				Sign up for free
 			</NavLink>
 		</section>

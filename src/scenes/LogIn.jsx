@@ -1,12 +1,15 @@
 import { FaApple, FaEyeSlash, FaFacebook, FaSpotify } from "react-icons/fa"
-import {googleIcon} from '../data/images'
+import { googleIcon } from "../data/images"
 import { NavLink } from "react-router-dom"
 
 const LogIn = () => {
 	return (
 		<div className='min-w-full h-auto fixed bg-zinc-950 from-zinc-800 to-zinc-950 z-10 top-0 bottom-0 start-0 overflow-y-auto md:bg-gradient-to-b'>
 			{/* logo */}
-			<NavLink to='/' className='flex items-center font-bold p-10 py-8 bg-zinc-950 mb-0 md:text-2xl'>
+			<NavLink
+				to='/'
+				className='flex items-center font-bold p-10 py-8 bg-zinc-950 mb-0 md:text-2xl'
+			>
 				<FaSpotify className='inline me-2 text-2xl md:text-4xl' /> Spotify
 			</NavLink>
 
@@ -17,7 +20,7 @@ const LogIn = () => {
 				{/* login options */}
 				<div className=' space-y-2'>
 					<button className='relative font-bold text-center text-lg text-gray-300 rounded-full py-2 w-full border border-gray-500 hover:border-white'>
-						<img src={googleIcon} alt="" className="h-5 absolute start-10 top-1/4" />
+						<img src={googleIcon} alt='' className='h-5 absolute start-10 top-1/4' />
 						Continue with Google
 					</button>
 					<button className='relative font-bold text-center text-lg text-gray-300 rounded-full py-2 w-full border border-gray-500 hover:border-white'>
@@ -84,7 +87,10 @@ const LogIn = () => {
 					<p className='hidden h-0.5 bg-gray-700 md:block'></p>
 					<div className='space-y-5 justify-center md:space-y-0 md:flex md:space-x-3'>
 						<p className='text-gray-400'>Don&apos;t have an account?</p>
-						<NavLink to='/signup' className='underline block font-medium hover:text-green-400'>
+						<NavLink
+							to='/signup'
+							className='underline block font-medium hover:text-green-400'
+						>
 							Sign up for spotify
 						</NavLink>
 					</div>

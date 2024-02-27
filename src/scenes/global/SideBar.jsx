@@ -29,7 +29,7 @@ const SideBar = () => {
 					className='group relative transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
 				>
 					<BiSearch className='text-3xl' />
-					<span className="invisible p-1 bg-white absolute rounded-full -left-3 top-2"></span>
+					<span className='invisible p-1 bg-white absolute rounded-full -left-3 top-2'></span>
 					<span>Search</span>
 				</NavLink>
 			</section>
@@ -73,7 +73,11 @@ const SideBar = () => {
 								We&apos;ll keep you updated on new episodes
 							</p>
 
-							<NavLink to='/podcasts' id='btn-podcasts' className='block w-fit text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
+							<NavLink
+								to='/podcasts'
+								id='btn-podcasts'
+								className='block w-fit text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'
+							>
 								Browse podcasts
 							</NavLink>
 						</div>
@@ -82,16 +86,24 @@ const SideBar = () => {
 
 				<div className='flex-col text-gray-400 p-5 pt-10'>
 					<div className='min-h-24 flex flex-wrap text-xs'>
-						<a href='#unknown' className="me-3">Legal</a>
-						<a href='#unknown' className="me-3">
+						<a href='#unknown' className='me-3'>
+							Legal
+						</a>
+						<a href='#unknown' className='me-3'>
 							Safety & Privacy Center
 						</a>
-						<a href='#unknown' className="me-3">Privacy Policy</a>
-						<a href='#unknown' className="me-3">Cookies Settings</a>
+						<a href='#unknown' className='me-3'>
+							Privacy Policy
+						</a>
+						<a href='#unknown' className='me-3'>
+							Cookies Settings
+						</a>
 						<a href='#unknown' className='me-3'>
 							About Ads
 						</a>
-						<a href='#unknown' className="me-3">Accessibility</a>
+						<a href='#unknown' className='me-3'>
+							Accessibility
+						</a>
 						<a href='#unknown'>Cookies</a>
 					</div>
 					<button
