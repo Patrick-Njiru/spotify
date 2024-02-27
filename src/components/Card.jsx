@@ -15,4 +15,9 @@ Card.propTypes = {
 	image: PropTypes.string.isRequired,
 }
 
+Card.defaultProps = {
+	category: '',
+	title: ''
+}
+
 export default Card

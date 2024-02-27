@@ -1,9 +1,17 @@
 // import React from 'react'
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import { FaGlobe, FaSpotify } from "react-icons/fa"
 import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
+import { useEffect, useState } from "react"
 
 const SideBar = () => {
+	const [displayDot, setDisplayDot] = useState("invisible")
+	const { pathname } = useLocation()
+
+	useEffect(() => {
+		setDisplayDot(pathname == "/search" ? "visible" : "invisible")
+	}, [pathname])
+
 	return (
 		<aside id='sidebar' className='w-1/3 flex flex-col justify-between'>
 			{/* Home and Search Links*/}
@@ -29,7 +37,7 @@ const SideBar = () => {
 					className='group relative transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
 				>
 					<BiSearch className='text-3xl' />
-					<span className='invisible p-1 bg-white absolute rounded-full -left-3 top-2'></span>
+					<span className={displayDot + ' p-1 bg-white absolute rounded-full -left-3 top-2'}></span>
 					<span>Search</span>
 				</NavLink>
 			</section>
