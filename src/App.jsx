@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import {
 	Footer,
 	Home,
-	Library,
 	Categories,
 	Search,
 	SideBar,
@@ -25,13 +24,12 @@ const App = () => (
 				<Header />
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route path='/podcasts/categories' element={<Categories />} />
 					<Route path='/search' element={<Search />} />
-					<Route path='/library' element={<Library />} />
 					<Route path='/playlists' element={<Playlists />} />
 					<Route path='/podcasts' element={<Podcasts />} />
-					<Route path='/signup' element={<SignUp />} />
+					<Route path='/podcasts/categories' element={<Categories />} />
 					<Route path='/login' element={<LogIn />} />
+					<Route path='/signup' element={<SignUp />} />
 				</Routes>
 				<Footer />
 			</main>

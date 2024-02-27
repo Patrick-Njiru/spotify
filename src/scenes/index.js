@@ -3,7 +3,6 @@ import Categories from "./podcasts/Categories"
 import SideBar from "./global/SideBar"
 import Footer from "./global/Footer"
 import Search from "./Search"
-import Library from "./Library"
 import CTA from "./global/CTA"
 import Podcasts from "./podcasts/Podcasts"
 import Playlists from "./Playlists"
@@ -16,7 +15,6 @@ export {
 	SideBar,
 	Footer,
 	Search,
-	Library,
 	CTA,
 	Podcasts,
 	Playlists,

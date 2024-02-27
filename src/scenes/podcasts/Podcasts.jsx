@@ -1,6 +1,6 @@
 import { FaChevronRight } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
-import { PodcastData } from "../../data"
+import { podcastData } from "../../data"
 import { Card } from "../../components"
 
 const Podcasts = () => {
@@ -10,7 +10,7 @@ const Podcasts = () => {
 				Podcasts
 			</h1>
 			<div className='px-6 flex flex-wrap justify-between'>
-				{PodcastData.map((item) => (
+				{podcastData.map((item) => (
 					<Card key={item.id} {...item} />
 				))}
 			</div>
