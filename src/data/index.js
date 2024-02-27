@@ -65,4 +65,47 @@ const playlistData = [
 
 const homeData = playlistData.filter((item) => item.id < 5)
 
-export { homeData, playlistData }
+const PodcastData = [
+	{
+		id: 1,
+		category: "Podcast Charts",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 2,
+		category: "Comedy",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 3,
+		category: "Educational",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 4,
+		category: "True Crime",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 5,
+		category: "Sports",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 6,
+		category: "Stories",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 7,
+		category: "Music",
+		image: "https://placehold.co/180",
+	},
+	{
+		id: 8,
+		category: "Arts and Entertainment",
+		image: "https://placehold.co/180",
+	},
+]
+
+export { homeData, playlistData, PodcastData }

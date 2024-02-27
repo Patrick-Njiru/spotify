@@ -1,6 +1,6 @@
 import { FaApple, FaFacebook, FaSpotify } from "react-icons/fa"
 import { NavLink } from "react-router-dom"
-import { googleIcon } from "../constants/images"
+import { googleIcon } from "../data/images"
 
 const SignUp = () => {
 	return (

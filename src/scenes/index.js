@@ -1,18 +1,18 @@
 import Home from "./Home"
-import Category from "./Category"
+import Categories from "./podcasts/Categories"
 import SideBar from "./global/SideBar"
 import Footer from "./global/Footer"
 import Search from "./Search"
 import Library from "./Library"
 import CTA from "./global/CTA"
-import Podcasts from "./Podcasts"
+import Podcasts from "./podcasts/Podcasts"
 import Playlists from "./Playlists"
 import SignUp from "./SignUp"
 import LogIn from "./LogIn"
 
 export {
 	Home,
-	Category,
+	Categories,
 	SideBar,
 	Footer,
 	Search,

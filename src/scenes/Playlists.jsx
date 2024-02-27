@@ -1,5 +1,5 @@
 import { Song } from "../components"
-import { playlistData } from "../constants/data"
+import { playlistData } from "../data"
 
 const Playlists = () => {
 	return (

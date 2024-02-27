@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { Song } from "../components"
-import { homeData } from "../constants/data"
+import { homeData } from "../data"
 
 const Home = () => {
 	return (

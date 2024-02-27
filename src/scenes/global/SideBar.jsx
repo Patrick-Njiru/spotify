@@ -73,9 +73,9 @@ const SideBar = () => {
 								We&apos;ll keep you updated on new episodes
 							</p>
 
-							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
+							<NavLink to='/podcasts' id='btn-podcasts' className='block w-fit text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
 								Browse podcasts
-							</button>
+							</NavLink>
 						</div>
 					</div>
 				</div>

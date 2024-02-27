@@ -3,7 +3,7 @@ import {
 	Footer,
 	Home,
 	Library,
-	Category,
+	Categories,
 	Search,
 	SideBar,
 	CTA,
@@ -22,7 +22,7 @@ const App = () => (
 				<Header />
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route path='/category' element={<Category />} />
+					<Route path='/podcasts/categories' element={<Categories />} />
 					<Route path='/search' element={<Search />} />
 					<Route path='/library' element={<Library />} />
 					<Route path='/playlists' element={<Playlists />} />
@@ -33,12 +33,6 @@ const App = () => (
 				<Footer />
 			</main>
 			<CTA />
-			{/* <div className="w-screen">
-				<Routes>
-				<Route path='/signup' element={<SignUp />} />
-					<Route path='/login' element={<LogIn />} />
-				</Routes>
-			</div> */}
 		</div>
 	</Router>
 )
