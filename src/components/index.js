@@ -1,5 +1,4 @@
-import Song from "./Song"
-import Header from "./Header"
+import SongCard from "./SongCard"
 import Card from "./Card"
 
-export { Song, Header, Card }
+export { SongCard, Card }

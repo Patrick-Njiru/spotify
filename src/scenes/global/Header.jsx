@@ -8,7 +8,6 @@ const Header = () => {
 	const { pathname } = useLocation()
 	const [displaySearch, setDisplaySearch] = useState("hidden")
 
-
 	useEffect(() => {
 		setDisplaySearch(pathname == "/search" ? "block" : "hidden")
 	}, [pathname])
@@ -25,7 +24,7 @@ const Header = () => {
 			</div>
 			{/* Search input */}
 			<form className={displaySearch + " absolute start-28"}>
-				<button type="submit">
+				<button type='submit'>
 					<BiSearch className='text-xl inline fill-gray-400 absolute  top-3 start-3 hover:fill-white' />
 				</button>
 				<input

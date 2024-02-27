@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
-import { Song } from "../components"
-import { homeData } from "../data"
+import { SongCard } from "../../components"
+import { homeData } from "../../data"
 
 const Home = () => {
 	return (
@@ -15,7 +15,7 @@ const Home = () => {
 			</div>
 			<div className='flex flex-wrap justify-between'>
 				{homeData.map((song) => (
-					<Song key={song.id} {...song} />
+					<SongCard key={song.id} {...song} />
 				))}
 			</div>
 		</section>

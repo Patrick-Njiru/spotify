@@ -1,5 +1,5 @@
-import { Song } from "../components"
-import { playlistData } from "../data"
+import { SongCard } from "../../components"
+import { playlistData } from "../../data"
 
 const Playlists = () => {
 	return (
@@ -7,7 +7,7 @@ const Playlists = () => {
 			<h2 className='font-bold text-2xl mb-3 '>Spotify Playlists</h2>
 			<div className='flex flex-wrap justify-between'>
 				{playlistData.map((song) => (
-					<Song key={song.id} {...song} />
+					<SongCard key={song.id} {...song} />
 				))}
 			</div>
 		</section>

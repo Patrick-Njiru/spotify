@@ -10,8 +10,8 @@ import {
 	Playlists,
 	LogIn,
 	SignUp,
+	Header,
 } from "./scenes"
-import { Header } from "./components"
 
 const App = () => {
 	return (

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import { BiPlay } from "react-icons/bi"
 
-const Song = ({ title, description, image }) => {
+const SongCard = ({ title, description, image }) => {
 	return (
 		<div className='group p-3 mb-8 relative rounded-lg w-48 shadow-md bg-neutral-800 cursor-pointer bg-gradient-to-b from-neutral-900 hover:to-0% hover:bg-neutral-700'>
 			<div className='transition-all invisible duration-200 absolute end-5 top-32 group-hover:top-28 group-hover:visible'>
@@ -16,10 +16,10 @@ const Song = ({ title, description, image }) => {
 	)
 }
 
-Song.propTypes = {
+SongCard.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
 	image: PropTypes.any.isRequired,
 }
 
-export default Song
+export default SongCard

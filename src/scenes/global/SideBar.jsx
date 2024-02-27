@@ -37,7 +37,9 @@ const SideBar = () => {
 					className='group relative transition-all duration-300 font-bold text-gray-400 flex items-center space-x-5 hover:text-white'
 				>
 					<BiSearch className='text-3xl' />
-					<span className={displayDot + ' p-1 bg-white absolute rounded-full -left-3 top-2'}></span>
+					<span
+						className={displayDot + " p-1 bg-white absolute rounded-full -left-3 top-2"}
+					></span>
 					<span>Search</span>
 				</NavLink>
 			</section>

@@ -1,5 +1,5 @@
 import { FaApple, FaEyeSlash, FaFacebook, FaSpotify } from "react-icons/fa"
-import { googleIcon } from "../data/images"
+import { googleIcon } from "../../data/images"
 import { NavLink } from "react-router-dom"
 
 const LogIn = () => {
