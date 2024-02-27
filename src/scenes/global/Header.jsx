@@ -30,7 +30,7 @@ const Header = () => {
 					className='p-2 ps-10 bg-zinc-800 truncate border border-gray-500 rounded-full w-40 md:w-44 lg:w-64 xl:w-96'
 					minLength='1'
 				/>
-				<button>
+				<button type='submit' onClick={e => e.preventDefault()}>
 					<BiSearch className='text-xl inline fill-gray-400 absolute  top-3 start-3 hover:fill-white' />
 				</button>
 			</form>
