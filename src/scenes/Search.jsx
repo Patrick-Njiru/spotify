@@ -11,8 +11,8 @@ const Search = () => {
 				Browse all
 			</NavLink>
 			<div className='flex flex-wrap justify-evenly md:justify-between'>
-				{searchData.map((item) => (
-					<Card key={item.id} {...item} />
+				{searchData.map((title, index) => (
+					<Card key={index} title={title} />
 				))}
 			</div>
 		</section>

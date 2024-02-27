@@ -1,23 +1,29 @@
 import PropTypes from "prop-types"
 
-const Card = ({ category, image, title }) => {
+const Card = ({ podcast, title }) => {
+	const randomColorGenerator = `rgba(${Math.ceil(Math.random() * 254)}, ${Math.ceil(
+		Math.random() * 254
+	)}, ${Math.ceil(Math.random() * 254)})`
 	return (
-		<div className='mb-8 w-48 relative bg-white rounded-xl cursor-pointer'>
-			<img src={image} alt={category || title} className='w-full rounded-xl' />
-			<h1 className='absolute top-4 start-4 font-bold text-xl'>{category || title}</h1>
+		<div
+			className='mb-8 w-48 h-48 relative rounded-xl cursor-pointer shadow-lg'
+			style={{ background: randomColorGenerator }}
+		>
+			<h1 className='absolute top-4 start-3 end-3 font-bold text-2xl capitalize'>
+				{podcast || title}
+			</h1>
 		</div>
 	)
 }
 
 Card.propTypes = {
-	category: PropTypes.string.isRequired,
+	podcast: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
-	image: PropTypes.string.isRequired,
 }
 
 Card.defaultProps = {
-	category: '',
-	title: ''
+	podcast: "",
+	title: "",
 }
 
 export default Card

@@ -77,7 +77,7 @@ const podcastData = [
 ]
 
 const allPodcastCategories = {
-	'Arts & Entertainment': [
+	"Arts & Entertainment": [
 		"Arts and Entertainment",
 		"books",
 		"celebrities",
@@ -90,7 +90,7 @@ const allPodcastCategories = {
 		"stories",
 		"tv",
 	],
-	'Business & Technology': [
+	"Business & Technology": [
 		"business",
 		"business & technology",
 		"careers",
@@ -99,8 +99,8 @@ const allPodcastCategories = {
 		"marketing",
 		"technology",
 	],
-	'Educational': ["educational", "government", "history", "language", "philosophy", "science"],
-	'Lifestyle & Health': [
+	Educational: ["educational", "government", "history", "language", "philosophy", "science"],
+	"Lifestyle & Health": [
 		"beauty",
 		"fashion",
 		"fitness & nutrition",
@@ -114,8 +114,8 @@ const allPodcastCategories = {
 		"self-care",
 		"sex",
 	],
-	'News & Politics': ["news & politics", "politics"],
-	'Sports & Recreation': [
+	"News & Politics": ["news & politics", "politics"],
+	"Sports & Recreation": [
 		"baseball",
 		"basketball",
 		"boxing",
@@ -130,7 +130,7 @@ const allPodcastCategories = {
 		"tennis",
 		"wrestling",
 	],
-	'True Crime': ["true crime"],
+	"True Crime": ["true crime"],
 }
 
 const searchData = [
@@ -162,6 +162,34 @@ const searchData = [
 	"Throwback",
 	"Netflix",
 	"Fresh Finds",
+	"at home",
+	"decades",
+	"fold & acoustic",
+	"focus",
+	"metal",
+	"gaming",
+	"tv & films",
+	"anime",
+	"instrumental",
+	"punk",
+	"blues",
+	"cooking & dining",
+	"alternative",
+	"travel",
+	"songwriters",
+	"nature & noise",
+	"funk & disco",
+	"league of legends",
+	"christian & gospel",
+	"wellness",
+	"reggae",
+	"summer",
+	"spotify singles",
+	"EQUAL",
+	"RADAR",
+	"Frequency",
+	"devotional",
+	"Dancehall/Zouk",
 ]
 
 export { homeData, playlistData, podcastData, allPodcastCategories, searchData }
