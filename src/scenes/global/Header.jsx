@@ -7,9 +7,11 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 const Header = ({ onSearch }) => {
 	const { pathname } = useLocation()
 	const [displaySearch, setDisplaySearch] = useState("hidden")
+	const [title, setTitle] = useState("")
 
 	useEffect(() => {
 		setDisplaySearch(pathname == "/search" ? "block " : "hidden ")
+		setTitle(pathname == "/playlists" ? "PlayLists" : pathname == "/podcasts" ? "Podcasts" : "")
 	}, [pathname])
 
 	return (
@@ -22,6 +24,8 @@ const Header = ({ onSearch }) => {
 					<FaChevronRight className='inline text-3xl p-1 bg-zinc-950 rounded-full group-disabled:fill-gray-500 group-disabled:cursor-not-allowed' />
 				</button>
 			</div>
+			{/* page title */}
+			{title && <h1 className='text-3xl font-extrabold text-gray-400'>{title}</h1>}
 			{/* Search input */}
 			<div className={displaySearch + "absolute start-28"}>
 				<input
