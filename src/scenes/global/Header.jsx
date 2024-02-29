@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
+import PropTypes from "prop-types"
+import { NavLink, useLocation } from "react-router-dom"
 import { BiSearch } from "react-icons/bi"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
-import { NavLink, useLocation } from "react-router-dom"
-// import PropTypes from "prop-types"
 
-const Header = () => {
+const Header = ({ onSearch }) => {
 	const { pathname } = useLocation()
 	const [displaySearch, setDisplaySearch] = useState("hidden")
 
 	useEffect(() => {
-		setDisplaySearch(pathname == "/search" ? "block" : "hidden")
+		setDisplaySearch(pathname == "/search" ? "block " : "hidden ")
 	}, [pathname])
 
 	return (
@@ -23,17 +23,15 @@ const Header = () => {
 				</button>
 			</div>
 			{/* Search input */}
-			<form className={displaySearch + " absolute start-28"}>
+			<div className={displaySearch + "absolute start-28"}>
 				<input
 					type='search'
-					placeholder='What do you want to play?'
 					className='p-2 ps-10 bg-zinc-800 truncate border border-gray-500 rounded-full w-40 md:w-44 lg:w-64 xl:w-96'
-					minLength='1'
+					onChange={(e) => onSearch(e.target.value)}
+					placeholder='What do you want to play?'
 				/>
-				<button type='submit' onClick={e => e.preventDefault()}>
-					<BiSearch className='text-xl inline fill-gray-400 absolute  top-3 start-3 hover:fill-white' />
-				</button>
-			</form>
+				<BiSearch className='text-xl inline fill-gray-400 absolute  top-3 start-3 hover:fill-white' />
+			</div>
 			<div className='flex items-center space-x-10'>
 				<NavLink
 					to='/signup'
@@ -52,5 +50,7 @@ const Header = () => {
 		</header>
 	)
 }
+
+Header.propTypes = { onSearch: PropTypes.func.isRequired }
 
 export default Header

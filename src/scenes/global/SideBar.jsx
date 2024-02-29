@@ -1,8 +1,7 @@
-// import React from 'react'
+import { useEffect, useState } from "react"
 import { NavLink, useLocation } from "react-router-dom"
 import { FaGlobe, FaSpotify } from "react-icons/fa"
 import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
-import { useEffect, useState } from "react"
 
 const SideBar = () => {
 	const [displayDot, setDisplayDot] = useState("invisible")
