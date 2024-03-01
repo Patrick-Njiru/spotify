@@ -6,7 +6,7 @@ const SmallModal = ({ modalDisplay, setModalDisplay }) => {
 		<div
 			className={
 				modalDisplay +
-				" z-20 absolute start-1 top-52 bg-neutral-800 p-3 rounded shadow-sm shadow-slate-500 font-bold"
+				" z-20 fixed start-56 top-60 bg-neutral-800 p-3 rounded shadow-sm shadow-slate-500 font-bold cursor-pointer lg:start-1/4"
 			}
 			onClick={() => setModalDisplay({ modal: "", smallModal: "hidden" })}
 		>

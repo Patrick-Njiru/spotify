@@ -64,7 +64,7 @@ const SideBar = ({ setModalDisplay }) => {
 					<button
 						className='transition-all duration-300 text-3xl font-light text-gray-400 flex rounded-3xl hover:text-white hover:bg-neutral-800 px-1'
 						title='Create playlist or folder'
-						onClick={() => {setModalDisplay({ modal: "", smallModal: "" })}}
+						onClick={() => {setModalDisplay({ modal: "hidden", smallModal: "" })}}
 					>
 						+
 					</button>

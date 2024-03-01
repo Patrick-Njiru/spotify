@@ -6,7 +6,7 @@ const Modal = ({ modalDisplay, setModalDisplay }) => {
 		<div
 			className={
 				modalDisplay +
-				" z-20 absolute start-1 top-40 bg-blue-600 p-4 w-80 rounded-xl shadow-2xl shadow-slate-800"
+				" z-20 fixed start-2/5 top-40 bg-blue-600 p-4 w-80 rounded-xl shadow-2xl shadow-slate-800"
 			}
 		>
 			<h1 className='text-lg'>Create Playlist</h1>
