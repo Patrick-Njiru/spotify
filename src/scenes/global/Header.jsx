@@ -10,7 +10,7 @@ const Header = ({ onSearch, setModalDisplay }) => {
 	const [title, setTitle] = useState("")
 
 	useEffect(() => {
-		setDisplaySearch(pathname == "/search" ? "block " : "hidden")
+		setDisplaySearch(pathname == "/search" ? "block " : "hidden ")
 		setTitle(pathname == "/playlists" ? "PlayLists" : pathname == "/podcasts" ? "Podcasts" : "")
 	}, [pathname])
 
