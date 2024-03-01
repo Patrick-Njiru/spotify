@@ -1,8 +1,11 @@
 import PropTypes from "prop-types"
 import { Card } from "../components"
 
-const Search = ({ updatedData }) => (
-	<section className='pt-2 px-6 bg-gradient-to-b from-neutral-800 to-70%'>
+const Search = ({ updatedData, setModalDisplay }) => (
+	<section
+		onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+		className='pt-2 px-6 bg-gradient-to-b from-neutral-800 to-70%'
+	>
 		<h1 className='text-xl font-bold my-4'>Browse all</h1>
 		<div className='flex flex-wrap justify-evenly md:justify-between'>
 			{updatedData.length > 0 ? (
@@ -16,6 +19,9 @@ const Search = ({ updatedData }) => (
 	</section>
 )
 
-Search.propTypes = { updatedData: PropTypes.array.isRequired }
+Search.propTypes = {
+	updatedData: PropTypes.array.isRequired,
+	setModalDisplay: PropTypes.func.isRequired,
+}
 
 export default Search

@@ -76,7 +76,7 @@ const podcastData = [
 	"Arts and Entertainment",
 ]
 
-const allPodcastCategories = {
+const categoriesData = {
 	"Arts & Entertainment": [
 		"Arts and Entertainment",
 		"books",
@@ -192,4 +192,4 @@ const searchData = [
 	"Dancehall/Zouk",
 ]
 
-export { homeData, playlistData, podcastData, allPodcastCategories, searchData }
+export { homeData, playlistData, podcastData, categoriesData, searchData }

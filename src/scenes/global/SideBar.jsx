@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import PropTypes from "prop-types"
 import { NavLink, useLocation } from "react-router-dom"
 import { FaGlobe, FaSpotify } from "react-icons/fa"
 import { BiHome, BiLibrary, BiSearch } from "react-icons/bi"
 
-const SideBar = () => {
+const SideBar = ({ setModalDisplay }) => {
 	const [displayDot, setDisplayDot] = useState("invisible")
 	const { pathname } = useLocation()
 
@@ -14,7 +15,10 @@ const SideBar = () => {
 	return (
 		<aside id='sidebar' className='flex flex-col justify-between'>
 			{/* Home and Search Links*/}
-			<section className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'>
+			<section
+				className='p-5 bg-neutral-900 rounded-lg flex-col space-y-5'
+				onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+			>
 				<NavLink
 					to='/'
 					className='font-medium flex items-center space-x-1 w-fit pe-5'
@@ -45,19 +49,22 @@ const SideBar = () => {
 
 			{/* library, create playlist and browse podcasts. */}
 			<section className='mt-2 pe-2 bg-neutral-900 rounded-lg'>
-				<div className='p-4 flex justify-between items-center'>
-					<NavLink
-						// to='library'
+				<div
+					className='p-4 flex justify-between items-center'
+					onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+				>
+					<button
 						className='transition-all duration-300 font-bold text-gray-400 flex hover:text-white'
 						title='Collapse Your Library'
 					>
 						<BiLibrary className='text-3xl mr-2' />{" "}
 						<span className='mt-1'>Your Library</span>
-					</NavLink>
+					</button>
 
 					<button
-						title='Create playlist or folder'
 						className='transition-all duration-300 text-3xl font-light text-gray-400 flex rounded-3xl hover:text-white hover:bg-neutral-800 px-1'
+						title='Create playlist or folder'
+						onClick={() => {setModalDisplay({ modal: "", smallModal: "" })}}
 					>
 						+
 					</button>
@@ -71,7 +78,10 @@ const SideBar = () => {
 							<p className='text-xs font-medium'>
 								It&apos;s easy, we&apos;ll help you
 							</p>
-							<button className='text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'>
+							<button
+								className='text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:bg-slate-100'
+								onClick={() => setModalDisplay({ modal: "", smallModal: "hidden" })}
+							>
 								Create playlist
 							</button>
 						</div>
@@ -85,7 +95,10 @@ const SideBar = () => {
 							<NavLink
 								to='/podcasts'
 								id='btn-podcasts'
-								className='block w-fit text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:shadow-lg'
+								className='block w-fit text-gray-950 bg-white rounded-full p-2 px-4 font-semibold text-xs hover:font-extrabold hover:bg-slate-100'
+								onClick={() =>
+									setModalDisplay({ modal: "hidden", smallModal: "hidden" })
+								}
 							>
 								Browse podcasts
 							</NavLink>
@@ -93,7 +106,10 @@ const SideBar = () => {
 					</div>
 				</div>
 
-				<div className='flex-col text-gray-400 p-5 pt-10'>
+				<div
+					className='flex-col text-gray-400 p-5 pt-10'
+					onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+				>
 					<div className='min-h-24 flex flex-wrap text-xs'>
 						<a href='#unknown' className='me-3'>
 							Legal
@@ -126,6 +142,10 @@ const SideBar = () => {
 			</section>
 		</aside>
 	)
+}
+
+SideBar.propTypes = {
+	setModalDisplay: PropTypes.func.isRequired,
 }
 
 export default SideBar

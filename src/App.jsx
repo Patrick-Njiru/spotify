@@ -14,9 +14,14 @@ import {
 	Header,
 } from "./scenes"
 import { searchData } from "./data"
+import { Modal, SmallModal } from "./components"
 
 const App = () => {
 	const [updatedData, setUpdatedData] = useState(searchData)
+	const [modalDisplay, setModalDisplay] = useState({
+		modal: "hidden",
+		smallModal: "hidden"
+	})
 
 	const handleSearch = (string) => {
 		setUpdatedData(
@@ -27,24 +32,56 @@ const App = () => {
 	return (
 		<Router>
 			<div id='app' className='relative text-white flex space-x-3 h-full'>
-				<SideBar />
+				<SideBar setModalDisplay={setModalDisplay} />
 				<main
 					id='app-main'
 					className='bg-neutral-900 rounded-lg relative overflow-hidden mb-2 hover:overflow-y-auto'
 				>
-					<Header onSearch={handleSearch} />
+					<Modal modalDisplay={modalDisplay.modal} setModalDisplay={setModalDisplay} />
+					<SmallModal
+						modalDisplay={modalDisplay.smallModal}
+						setModalDisplay={setModalDisplay}
+					/>
+					<Header onSearch={handleSearch} setModalDisplay={setModalDisplay} />
 					<Routes>
-						<Route exact path='/' element={<Home />} />
-						<Route path='/search' element={<Search updatedData={updatedData} />} />
-						<Route path='/playlists' element={<Playlists />} />
-						<Route path='/podcasts' element={<Podcasts />} />
-						<Route path='/podcasts/categories' element={<Categories />} />
-						<Route path='/login' element={<LogIn />} />
-						<Route path='/signup' element={<SignUp />} />
+						<Route
+							exact
+							path='/'
+							element={<Home setModalDisplay={setModalDisplay} />}
+						/>
+						<Route
+							path='/search'
+							element={
+								<Search
+									updatedData={updatedData}
+									setModalDisplay={setModalDisplay}
+								/>
+							}
+						/>
+						<Route
+							path='/playlists'
+							element={<Playlists setModalDisplay={setModalDisplay} />}
+						/>
+						<Route
+							path='/podcasts'
+							element={<Podcasts setModalDisplay={setModalDisplay} />}
+						/>
+						<Route
+							path='/podcasts/categories'
+							element={<Categories setModalDisplay={setModalDisplay} />}
+						/>
+						<Route
+							path='/login'
+							element={<LogIn setModalDisplay={setModalDisplay} />}
+						/>
+						<Route
+							path='/signup'
+							element={<SignUp setModalDisplay={setModalDisplay} />}
+						/>
 					</Routes>
-					<Footer />
+					<Footer setModalDisplay={setModalDisplay} />
 				</main>
-				<CTA />
+				<CTA setModalDisplay={setModalDisplay} />
 			</div>
 		</Router>
 	)

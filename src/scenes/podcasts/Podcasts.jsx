@@ -1,10 +1,14 @@
+import PropTypes from "prop-types"
 import { NavLink } from "react-router-dom"
 import { FaChevronRight } from "react-icons/fa"
 import { Card } from "../../components"
 import { podcastData } from "../../data"
 
-const Podcasts = () => (
-	<section className='relative bg-gradient-to-b from-green-700 to-40%'>
+const Podcasts = ({ setModalDisplay }) => (
+	<section
+		onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+		className='relative bg-gradient-to-b from-green-700 to-40%'
+	>
 		<h1 className='text-8xl font-extrabold bg-gradient-to-b from-emerald-700 to-emerald-900 pt-14 pb-6 mb-8 ps-6 '>
 			Podcasts
 		</h1>
@@ -22,5 +26,7 @@ const Podcasts = () => (
 		</NavLink>
 	</section>
 )
+
+Podcasts.propTypes = { setModalDisplay: PropTypes.func.isRequired }
 
 export default Podcasts

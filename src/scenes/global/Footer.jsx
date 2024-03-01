@@ -1,7 +1,11 @@
+import PropTypes from "prop-types"
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
-const Footer = () => (
-	<footer className='flex flex-wrap justify-between px-6 mt-20'>
+const Footer = ({ setModalDisplay }) => (
+	<footer
+		onClick={() => setModalDisplay({ modal: "hidden", smallModal: "hidden" })}
+		className='flex flex-wrap justify-between px-6 mt-20'
+	>
 		<div className='flex flex-wrap justify-between w-full space-y-12 lg:space-y-0 lg:w-3/4'>
 			<div className='flex flex-col space-y-2 w-full lg:w-1/4'>
 				<h4 className='font-bold'>Company</h4>
@@ -58,5 +62,7 @@ const Footer = () => (
 		</div>
 	</footer>
 )
+
+Footer.propTypes = { setModalDisplay: PropTypes.func.isRequired }
 
 export default Footer
