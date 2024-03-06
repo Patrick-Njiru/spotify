@@ -41,5 +41,3 @@ Spotify music website has a great design and great features that sparked my inte
 
 <h2 id='author'> Author </h2>
 <a href='https://www.linkedin.com/in/patrick-njiru-7569241ba'>Patrick Njiru</a>
-
-<h2> Copyright </h2>
