@@ -1,7 +1,7 @@
 <h1>Spotify</h1>
 
 <h2> Description </h2>
-Spotify music website has a great design and great features that sparked my interest and I decided to clone it. It's interactive but not mobile repsonsive.
+This website is a Spotify music website. I implemented most of the features that one can see without logging in. I might add the few remaining pages in the future. It's interactive but not mobile-responsive.
 
 <h2> Table of Contents </h2>
 1. <a href='#tech'>Technologies used</a> <br>
