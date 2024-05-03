@@ -20,10 +20,22 @@ const Header = ({ onSearch, setModalDisplay }) => {
 			className='sticky top-0 bg-inherit z-10 flex justify-between items-center p-3 px-6'
 		>
 			<div className='space-x-2'>
-				<button className='group cursor-pointer'>
+				<button
+					className='group cursor-pointer'
+					onClick={() => {
+						window.history.pushState({ back: true }, "")
+						window.history.back()
+					}}
+				>
 					<FaChevronLeft className='inline text-3xl p-1 bg-zinc-950 rounded-full group-disabled:fill-gray-500 group-disabled:cursor-not-allowed' />
 				</button>
-				<button className='group cursor-pointer'>
+				<button
+					className='group cursor-pointer'
+					onClick={() => {
+						window.history.pushState({}, "")
+						window.history.forward()
+					}}
+				>
 					<FaChevronRight className='inline text-3xl p-1 bg-zinc-950 rounded-full group-disabled:fill-gray-500 group-disabled:cursor-not-allowed' />
 				</button>
 			</div>
