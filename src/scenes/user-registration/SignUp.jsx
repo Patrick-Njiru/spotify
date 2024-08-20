@@ -43,7 +43,7 @@ const SignUp = ({ setModalDisplay }) => {
 					<span className='w-1/5 text-center'>or</span>
 					<span className='w-2/5 h-0.5 bg-gray-700'></span>
 				</div>
-				{/* Alternative signup options */}
+				{/* Alternative sign-up options */}
 				<div className=' space-y-2'>
 					<button className='relative font-bold text-center text-sm rounded-full py-2 w-full border border-gray-500 hover:border-white'>
 						<img src={googleIcon} alt='' className='h-4 absolute start-5 top-1/4 ' />

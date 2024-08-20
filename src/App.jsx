@@ -56,7 +56,7 @@ const App = () => {
 					<Route path='*' element={<Error404 setModalDisplay={setModalDisplay} />} />
 				</Route>
 				<Route path='/login' element={<LogIn setModalDisplay={setModalDisplay} />} />
-				<Route path='/signup' element={<SignUp setModalDisplay={setModalDisplay} />} />
+				<Route path='/sign-up' element={<SignUp setModalDisplay={setModalDisplay} />} />
 			</Routes>
 		</Router>
 	)

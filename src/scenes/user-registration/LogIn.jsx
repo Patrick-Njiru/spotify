@@ -98,7 +98,7 @@ const LogIn = ({ setModalDisplay }) => {
 					<div className='space-y-5 justify-center md:space-y-0 md:flex md:space-x-3'>
 						<p className='text-gray-400'>Don&apos;t have an account?</p>
 						<NavLink
-							to='/signup'
+							to='/sign-up'
 							className='underline block font-medium hover:text-green-400'
 						>
 							Sign up for spotify

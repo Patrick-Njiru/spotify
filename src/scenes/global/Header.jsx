@@ -53,7 +53,7 @@ const Header = ({ onSearch, setModalDisplay }) => {
 			</div>
 			<div className='flex items-center space-x-10'>
 				<NavLink
-					to='/signup'
+					to='/sign-up'
 					className='text-gray-400 font-medium hover:text-white hover:text-lg'
 				>
 					Sign up

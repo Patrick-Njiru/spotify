@@ -15,7 +15,7 @@ const CallToAction = ({ setModalDisplay }) => (
 			</p>
 		</div>
 		<NavLink
-			to='/signup'
+			to='/sign-up'
 			id='btn-cta'
 			className='bg-white text-black px-6 py-3 pt-4 font-semibold rounded-full min-w-40 hover:bg-slate-100 hover:font-extrabold'
 		>
