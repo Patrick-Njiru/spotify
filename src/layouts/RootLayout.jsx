@@ -5,7 +5,7 @@ import { Modal, SmallModal } from "../components"
 
 const RootLayout = ({ handleSearch, modalDisplay, setModalDisplay }) => {
 	return (
-		<div id='app' className='relative text-white flex space-x-3 h-full'>
+		<div id='app' className='relative text-white flex space-x-3 h-full p-2'>
 			<SideBar setModalDisplay={setModalDisplay} />
 			<main
 				id='app-main'

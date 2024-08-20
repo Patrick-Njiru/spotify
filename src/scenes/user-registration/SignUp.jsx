@@ -10,8 +10,8 @@ const SignUp = ({ setModalDisplay }) => {
 	})
 
 	return (
-		<div className='w-full h-auto fixed bg-zinc-950 z-10 top-0 bottom-0 start-0 overflow-y-auto'>
-			<NavLink to='/' className='block font-bold m-6 mb-0'>
+		<div className='bg-zinc-950'>
+			<NavLink to='/' className='inline-block font-bold m-6 mb-0'>
 				<FaSpotify className='text-2xl inline' /> Spotify
 			</NavLink>
 			<div className='w-72 mx-auto space-y-6 my-3'>
