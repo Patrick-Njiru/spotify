@@ -8,7 +8,8 @@ import Podcasts from "./podcasts/Podcasts"
 import Playlists from "./home/Playlists"
 import SignUp from "./user-registration/SignUp"
 import LogIn from "./user-registration/LogIn"
-import Header from './global/Header'
+import Header from "./global/Header"
+import Error404 from "./Error404"
 
 export {
 	Home,
@@ -21,5 +22,6 @@ export {
 	Playlists,
 	SignUp,
 	LogIn,
-	Header
+	Header,
+	Error404,
 }
