@@ -6,7 +6,7 @@ const Card = ({ podcast, title }) => {
 	)}, ${Math.ceil(Math.random() * 254)})`
 	return (
 		<div
-			className='mb-8 w-48 h-48 relative rounded-xl cursor-pointer shadow-lg'
+			className='h-48 relative rounded-xl cursor-pointer shadow-lg'
 			style={{ background: randomColorGenerator }}
 		>
 			<h1 className='absolute top-4 start-3 end-3 font-bold text-2xl capitalize'>

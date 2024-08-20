@@ -12,9 +12,11 @@ const App = () => {
 	})
 
 	const handleSearch = (string) => {
-		setUpdatedData(
-			searchData.filter((value) => value.toLowerCase().includes(string.toLowerCase()))
-		)
+		string.length > 1
+			? setUpdatedData(
+					searchData.filter((value) => value.toLowerCase().includes(string.toLowerCase()))
+			  )
+			: setUpdatedData(searchData)
 	}
 
 	return (

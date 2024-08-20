@@ -8,7 +8,7 @@ const Playlists = ({ setModalDisplay }) => (
 		className='pt-2 px-6 relative bg-gradient-to-b from-neutral-800 to-70%'
 	>
 		<h2 className='font-bold text-2xl mb-3 '>Spotify Playlists</h2>
-		<div className='flex flex-wrap justify-between'>
+		<div className='grid grid-cols-4 gap-8'>
 			{playlistData.map((song) => (
 				<SongCard key={song.id} {...song} />
 			))}

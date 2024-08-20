@@ -10,7 +10,7 @@ const Categories = ({ setModalDisplay }) => (
 		{Object.entries(categoriesData).map(([title, podcasts]) => (
 			<div key={title}>
 				<h1 className='ps-6 mt-12 mb-1 text-2xl font-bold'>{title}</h1>
-				<div className='px-6 flex flex-wrap justify-between'>
+				<div className='px-6 grid grid-cols-3 gap-8'>
 					{podcasts.map((podcast, index) => (
 						<Card key={index} podcast={podcast} />
 					))}

@@ -16,7 +16,7 @@ const Home = ({ setModalDisplay }) => (
 				Show all
 			</NavLink>
 		</div>
-		<div className='flex flex-wrap justify-between'>
+		<div className='grid grid-cols-4 gap-8'>
 			{homeData.map((song) => (
 				<SongCard key={song.id} {...song} />
 			))}
